@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:"Effra";
+    src: url(fonts/Effra_Trial_Bd.ttf);
+}
+
+@font-face {
+    font-family:"Lato";
+    src: url(fonts/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family:"Oswald";
+    src: url(fonts/Oswald-light.ttf);
+}
+
+/* Home Page */
+.banner {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(images/moon-fest-scrolls.JPG);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    
+}
+
+.home-container {
+    min-height:100vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1000px;
+    font: inherit;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.home-text {
+    margin-left: 15px;
+    margin-right: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home-text {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.home-btns {
+    margin-left: -.25rem;
+    margin-right: -.25rem;
+    font-size: 0;
+}
+
+.btn {
+    font-weight: 700;
+    border-width: 2px;
+    border-style: solid;
+    font-style: normal;
+    letter-spacing: 2px;
+    margin: .4rem .25rem;
+    white-space: normal;
+    padding: 0.8rem 2rem;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
+    word-break: break-word;
+    font-size: 0.8rem;
+    font-family: 'Source Sans Pro', 'sans-serif';
+    text-decoration: none;
+}
+
+.learn-more-btn {
+    background-color: #b59410;
+    border-color: #b59410;
+    color: #ffffff;
+}
+
+.book-now-btn {
+    background-color: #850101;
+    border-color: #850101;
+    color: #ffffff;
+}
+
+.home-head {
+    padding-bottom: 20px;
+}
+
+.home-par {
+    padding-bottom: 20px;
+}
+
+.navbar-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #262626;
+    
+}
+
+.nav-logo {
+    height: 2rem;
+    width: auto;
+    padding-top: 4px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 50px;
+    font-family: Lato;
+    text-transform: uppercase;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.nav-links a:hover, .nav-links:focus, .nav-links:active {
+    background-color: #2098D1;
+    color: white;
+  }
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+    font-family: Lato;
+    text-transform: uppercase;
+    transform: none;
+    transition-duration: 0s;
+}
+
+.link-container {
+    height:100%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #262626;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    transition-duration: 0.3s;
+    transition-property: color, background-color;
+}
+
+.link-container:hover, .link-container:focus, .link-container:active {
+    background-color: #850101;
+    color: white;
+  }
+
+.image {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    padding-top: 25px;
+    margin-top: 5px;
+}
+
+.home-excerpt {
+    width: 40%;
+    height: auto;
+    color: #fff;
+}
+
+.about-us-image-1 {
+    margin-left: 8%;
+    width: 40%;
+    height: auto;
+    border: 2px solid #850101;
+    z-index: 1;
+}
+
+.about-us-container {
+    display: flex;
+    justify-content: center;
+}
+
+.break {
+    margin-top: 7px;
+    width: 25vh;
+    margin-left: 6.5%;
+    height: 5px;
+    background-color: #fff;
+}
+
+.break1 {
+    margin-top: 5vh;
+}
+
+.home-excerpt h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    font-family: "Effra", "Effra W01";
+    font-weight: bold;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+.home-excerpt p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.learn-more-home {
+    background-color: red;
+    border-color: red;
+    color: #ffffff;
+}
+
+.team-container {
+    margin-top: 60px;
+    display:flex;
+    justify-content: center;
+}
+
+.home-image-2 {
+    width: 40%;
+    height: auto;
+    border: 2px solid #850101;
+    background-color: black;
+    z-index: 1;
+}
+
+.eight-spacing {
+    margin-left: 8%;
+}
+
+.service-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display:flex;
+    justify-content: center;
+}
+
+.footer-container {
+    width: 100%;
+    height: auto;
+    background-color: #262626;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+    font-family: sans-serif;
+}
+
+.footer-box {
+    width: 100%;
+    display: flex;
+}
+
+.footer-first-section {
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 8%;
+}
+
+.footer-logo {
+    width: auto;
+    height: 80px; 
+}
+
+.footer-logo-break {
+    margin: 10px;
+    height: 5px;
+    background-color: #fff;
+    width: 35px;
+}
+
+#footer-2-caption {
+    font-weight:bold;
+    white-space: pre-wrap;
+    font-size: 1.1rem;
+    line-height:1.2;
+}
+
+.footer-box {
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.footer-box-2 {
+    width: 45%;
+}
+
+#footer-2nd-caption {
+    margin-top: 15px;
+    font-size: .8rem;
+}
+
+#imp-exp {
+    font-family: sans-serif;
+}
+
+#footer-highlight {
+    background-color: red;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    font-size: 0.8;
+}
+
+.footer-book-link {
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+/* TEAM PAGE */
+.teampage-heading-container {
+    width: 100%;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 0.5)), url(images/old-coaches.jpg);
+    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-family: sans-serif;
+}
+
+#banner-font-small {
+    font-size: 0.8rem;
+}
+
+#banner-font-large {
+    font-size: 3rem;
+    
+}
+
+.people-container {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    line-height: 1.2rem;
+    background-color: #FFF;
+}
+
+#people-font {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 50;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.people-row-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.person-box {
+    width: 19%;
+    height: 55vh;
+    background-color: #262626;
+}
+
+.james-nguyen-box {
+    background-image: url(images/james_nguyen.png), url(images/imperial1-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover, contain;
+    overflow: hidden;
+}
+
+.leon-ly-box {
+    background-image: url(images/leon_ly.png), url(images/imperial1-small.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover, contain;
+    overflow: hidden;
+}
