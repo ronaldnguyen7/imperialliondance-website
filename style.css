@@ -19,6 +19,10 @@
     src: url(fonts/Oswald-light.ttf);
 }
 
+@font-face {
+    font-family: "Roberto Condensed";
+    src: url(fonts/RobotoCondensed-Light.ttf);
+}
 /* Home Page */
 .banner {
     width: 100%;
@@ -375,7 +379,7 @@
     padding-top: 5px;
     padding-bottom: 5px;
     line-height: 1.2rem;
-    background-color: #FFF;
+    background-color: #000;
 }
 
 #people-font {
@@ -395,10 +399,46 @@
     margin-bottom: 50px;
 }
 
+.people-row-container-2 {
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
 .person-box {
     width: 19%;
     height: 55vh;
     background-color: #262626;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: "Roberto Condensed";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.person-box-2 {
+    width: 25.3333%;
+    height: 55vh;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column-reverse;
+    font-family: "Roberto Condensed";
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.team-members-roles {
+    color: #988;
+    text-transform: uppercase;
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    background-color: #000;
+    padding: 4px 15px;
+    font-weight: bolder;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 .james-nguyen-box {
@@ -415,4 +455,48 @@
     background-position: center;
     background-size: cover, contain;
     overflow: hidden;
+}
+
+.person-info {
+    height: 35%;
+    width: 100%;
+    background-color: #988;
+    color: black;
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    clip-path: polygon(0 15%, 100% 0%, 100% 100%, 0 100%);
+    text-align: center;
+}
+
+.team-roles {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/*service page*/
+.service-page-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.service-box {
+    width: 33.333%;
+    height: 100vh;
+}
+
+.service-ground {
+    background-color: #2098D1;
+}
+
+.service-benches {
+    background-color: red;
+}
+
+.service-jongs {
+    background-color: green;
 }
